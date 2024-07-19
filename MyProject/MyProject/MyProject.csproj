@@ -40,8 +40,26 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Program.cs"/>
+        <Compile Include="NetLayer\Client.cs" />
+        <Compile Include="NetLayer\Connection.cs" />
+        <Compile Include="NetLayer\Connection_OpMsg.cs" />
+        <Compile Include="NetLayer\Connection_Read.cs" />
+        <Compile Include="NetLayer\Connection_Send.cs" />
+        <Compile Include="NetLayer\Connection_Stream.cs" />
+        <Compile Include="NetLayer\NetException.cs" />
+        <Compile Include="NetLayer\NetworkManager.cs" />
+        <Compile Include="NetLayer\TCPConnection.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="NetLayer\Client.cs.meta" />
+      <Content Include="NetLayer\Connection.cs.meta" />
+      <Content Include="NetLayer\Connection_OpMsg.cs.meta" />
+      <Content Include="NetLayer\Connection_Read.cs.meta" />
+      <Content Include="NetLayer\Connection_Send.cs.meta" />
+      <Content Include="NetLayer\Connection_Stream.cs.meta" />
+      <Content Include="NetLayer\NetException.cs.meta" />
+      <Content Include="NetLayer\TCPConnection.cs.meta" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
